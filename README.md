@@ -1,6 +1,6 @@
 # Projet de Gestion de ZooBisous
 
-## De Jawad et Samuel
+## De BELKAID Jawad et DEGRANDE Samuel
 
 Ce projet Java est un système de gestion de zoo permettant de gérer les animaux, les enclos et les visites. Il est basé sur le principe S.O.L.I.D
 
@@ -25,6 +25,7 @@ Les opérations sur ces entités sont gérées à travers des gestionnaires corr
 - **GestionnaireVisite :** Interface et implémentation pour gérer les visites.
 
 Des classes de test sont disponibles testant chaque fonctionnalité de chaque classe 
+--> Sauf pour le GestionnaireVisite (manque de temps) 
 
 ## Utilisation
 
