@@ -1,5 +1,7 @@
 # Projet de Gestion de ZooBisous
 
+## De Jawad et Samuel
+
 Ce projet Java est un système de gestion de zoo permettant de gérer les animaux, les enclos et les visites. Il est basé sur le principe S.O.L.I.D
 
 ## Fonctionnalités
