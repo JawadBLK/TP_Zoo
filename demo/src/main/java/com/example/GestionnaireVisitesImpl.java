@@ -5,13 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GestionnaireVisites {
+public class GestionnaireVisitesImpl implements GestionnaireVisite {
     private Map<String, Visite> visites;
 
-    public GestionnaireVisites() {
-        visites = new HashMap<>();
+    public GestionnaireVisitesImpl() {
+        this.visites = new HashMap<>();
     }
 
+    @Override
     public void ajouterVisite(Visite visite) {
         if (visites.containsKey(visite.getIdVisite())) {
             throw new IllegalArgumentException("Identifiant de visite déjà existant");
@@ -22,7 +23,7 @@ public class GestionnaireVisites {
         visites.put(visite.getIdVisite(), visite);
     }
 
-    @SuppressWarnings("unchecked")
+    @Override
     public void modifierVisite(String identifiantVisite, Map<String, Object> modifications) {
         Visite visite = visites.get(identifiantVisite);
         if (visite == null) {
@@ -46,6 +47,7 @@ public class GestionnaireVisites {
         });
     }
 
+    @Override
     public void annulerVisite(String identifiantVisite) {
         if (!visites.containsKey(identifiantVisite)) {
             throw new IllegalArgumentException("Visite non trouvée");
@@ -53,11 +55,8 @@ public class GestionnaireVisites {
         visites.remove(identifiantVisite);
     }
 
+    @Override
     public Visite obtenirVisite(String identifiantVisite) {
         return visites.get(identifiantVisite);
     }
-
-    // Autres méthodes comme obtenir toutes les visites, etc.
 }
-
-
