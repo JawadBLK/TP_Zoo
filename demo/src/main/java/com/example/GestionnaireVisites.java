@@ -22,6 +22,7 @@ public class GestionnaireVisites {
         visites.put(visite.getIdVisite(), visite);
     }
 
+    @SuppressWarnings("unchecked")
     public void modifierVisite(String identifiantVisite, Map<String, Object> modifications) {
         Visite visite = visites.get(identifiantVisite);
         if (visite == null) {
