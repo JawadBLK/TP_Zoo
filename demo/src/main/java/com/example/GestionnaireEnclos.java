@@ -18,6 +18,7 @@ public class GestionnaireEnclos {
         this.enclos.put(enclos.getIdEnclos(), enclos);
     }
 
+    @SuppressWarnings("unchecked")
     public void mettreAJourEnclos(String idEnclos, Map<String, Object> misesAJour) {
         Enclos enclos = this.enclos.get(idEnclos);
         if (enclos == null) {
@@ -33,6 +34,7 @@ public class GestionnaireEnclos {
                     break;
                 case "especesPermises":
                     enclos.setEspecesPermises((List<String>) valeur);
+                    
                     break;
             }
         });
