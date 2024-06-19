@@ -1,0 +1,24 @@
+# Ignore les fichiers générés par l'IDE
+.idea/
+
+# Ignore les fichiers compilés Java
+*.class
+
+# Ignore les fichiers de logs
+*.log
+
+# Ignore les fichiers de configuration spécifiques à l'utilisateur
+*.iml
+*.ipr
+*.iws
+
+# Ignore les fichiers de sauvegarde
+*~
+
+# Ignore les fichiers de dépendances et de construction
+/target/
+/build/
+
+# Ignore les fichiers spécifiques au système d'exploitation
+.DS_Store
+Thumbs.db
