@@ -23,6 +23,7 @@ public class GestionnaireVisitesImpl implements GestionnaireVisite {
         visites.put(visite.getIdVisite(), visite);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void modifierVisite(String identifiantVisite, Map<String, Object> modifications) {
         Visite visite = visites.get(identifiantVisite);
