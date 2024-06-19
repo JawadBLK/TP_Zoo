@@ -19,6 +19,7 @@ public class GestionnaireEnclosImpl implements GestionnaireEnclos {
         this.enclos.put(enclos.getIdEnclos(), enclos);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void modifierEnclos(String identifiantEnclos, Map<String, Object> modifications) {
         Enclos enclos = this.enclos.get(identifiantEnclos);
